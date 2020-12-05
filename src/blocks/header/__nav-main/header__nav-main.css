@@ -1,0 +1,30 @@
+@import url('./_color/header__nav-main_color.css');
+
+.header__nav-main {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 23px;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+}
+
+.header__nav-main:hover {
+  color: #a8a8a8;
+}
+
+.header__nav-item:nth-child(2) .header__nav-main {
+  border-bottom: none;
+}
+
+@media (max-width : 1439px) {
+  .header__nav-main {
+    font-size: 16px;
+    padding-bottom: 19px;
+    line-height: 37px;
+  }
+}

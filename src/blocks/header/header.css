@@ -1,0 +1,44 @@
+@import url('./__logo/header__logo.css');
+@import url('./__menu/header__menu.css');
+@import url('./__nav-items/header__nav-items.css');
+@import url('./__nav-main/header__nav-main.css');
+@import url('./__nav-button/header__nav-button.css');
+@import url('./__nav/header__nav.css');
+@import url('./_dark/header_dark.css');
+@import url('./__nav-item/header__nav-item.css');
+@import url('./__nav-button-icon/header__nav-button-icon.css');
+@import url('./_boxShadow/header_boxShadow.css');
+@import url('./_display/header_display.css');
+@import url('./_display-none/header_display-none.css');
+
+
+.header {
+	font-family: 'Roboto', Arial, sans-serif;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+	box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+	position: relative;
+	margin: 0 auto;
+	padding: 18px calc((100% - 1232px) / 2) 12px;
+	z-index: 3;
+}
+
+@media (max-width : 1311px) {
+	.header {
+		padding: 14px 40px 12px;
+	}
+}
+
+@media (max-width : 767px) {
+	.header {
+		padding: 16px;
+	}
+}

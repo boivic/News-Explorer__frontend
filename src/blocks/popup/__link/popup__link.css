@@ -1,0 +1,15 @@
+.popup__link {
+  text-decoration: none;
+}
+
+.popup__link:hover {
+  color: rgb(255, 0, 0);
+}
+
+.popup__link_link {
+  margin: 15px 0 0;
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Inter', Arial, sans-serif;
+}

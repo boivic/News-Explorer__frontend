@@ -1,0 +1,25 @@
+.card__button-collection {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  background-image: url(../../../images/collection-normal.svg);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+  outline: none;
+  cursor: pointer;
+}
+
+.card__button-collection:hover {
+  background-image: url(../../../images/collection-hover.svg);
+}
+
+@media(max-width : 1374px) {
+  .card__button-collection {
+    top: 8px;
+    right: 8px;
+  }
+}

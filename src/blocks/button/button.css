@@ -1,0 +1,19 @@
+@import url(./__disabled/button__disabled.css);
+
+.button {
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  z-index: 1;
+  transition: all .5s linear;
+}
+
+.button:focus {
+  outline: none;
+}

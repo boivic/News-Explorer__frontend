@@ -1,0 +1,13 @@
+@import url('./__response/error__response.css');
+@import url('./__search/error__search.css');
+.error {
+  font-size: 12px;
+  line-height: 14px;
+  color: #FF0000;
+  display: block;
+  margin: 4px 0 0 6px;
+  box-sizing: border-box;
+  min-height: 20px;
+  position: relative;
+  z-index: 1;
+}

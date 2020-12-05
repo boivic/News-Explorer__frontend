@@ -1,0 +1,9 @@
+@media(min-width : 768px) {
+  .header__nav-main_color.header__nav-main_color {
+    color: #1a1b22;
+  }
+
+  .header__nav-item:nth-child(2) .header__nav-main_color.header__nav-main_color {
+    border-bottom: 3px solid #1a1b22;
+  }
+}

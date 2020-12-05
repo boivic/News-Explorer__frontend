@@ -1,0 +1,6 @@
+@media(min-width : 768px) {
+  .header__nav-button_color.header__nav-button_color {
+    color: #1a1b22;
+    border: 1px solid #d1d2d6;
+  }
+}

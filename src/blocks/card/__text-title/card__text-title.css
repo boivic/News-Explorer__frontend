@@ -1,0 +1,21 @@
+.card__text-title {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 100px;
+  padding: 8px 15px;
+  margin: 0;
+  z-index: 1;
+}
+
+@media(max-width : 1374px) {
+  .card__text-title {
+    top: 8px;
+    left: 8px;
+  }
+}

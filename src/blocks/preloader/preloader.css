@@ -1,0 +1,14 @@
+@import url('./__circle/preloader__circle.css');
+@import url('./__search/preloader__search.css');
+@import url('./__search-text/preloader__search-text.css');
+@import url('./__result/preloader__result.css');
+@import url('./__image/preloader__image.css');
+@import url('./__result-title/preloader__result-title.css');
+@import url('./__result-text/preloader__result-text.css');
+@import url('./_display/preloader_display.css');
+@import url('./__error/preloader__error.css');
+
+.preloader {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f5f6f7;
+}

@@ -1,0 +1,54 @@
+{
+  "name": "news-explorer-frontend",
+  "homepage": "https://dimukko.github.io/news-explorer-frontend/",
+  "version": "0.1.0",
+  "description": "Фронтенд для дипломной работы",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimukko/news-explorer-frontend.git"
+  },
+  "author": "Dimka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimukko/news-explorer-frontend/issues"
+  },
+  "dependencies": {
+    "autoprefixer": "9.7.6",
+    "babel-polyfill": "6.26.0",
+    "core-js": "3.4.1",
+    "validator": "13.0.0",
+    "xss": "1.0.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/preset-env": "7.9.5",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "8.1.0",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "cross-env": "7.0.2",
+    "css-loader": "3.5.3",
+    "cssnano": "4.1.10",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-plugin-import": "2.20.2",
+    "file-loader": "6.0.0",
+    "gh-pages": "2.2.0",
+    "html-webpack-plugin": "3.2.0",
+    "image-webpack-loader": "6.0.0",
+    "mini-css-extract-plugin": "0.9.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "postcss-loader": "3.0.0",
+    "style-loader": "1.2.0",
+    "webpack": "4.42.1",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.11.0",
+    "webpack-md5-hash": "0.0.6"
+  }
+}

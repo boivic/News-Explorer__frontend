@@ -1,0 +1,18 @@
+.description__name {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(26, 27, 34, 0.5);
+  margin: 0;
+}
+
+@media(max-width : 1374px) {
+  .description__name {
+    font-size: 14px;
+  }
+}
+
+@media(max-width : 767px) {
+  .description__name {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,43 @@
+@import url('./__avatar/author__avatar.css');
+@import url('./__title/author__title.css');
+@import url('./__text/author__text.css');
+@import url('./_display-none/author_display-none.css');
+
+.author {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #1a1b22;
+  padding: 42px 40px 85px calc((100% - 1232px) / 2);
+}
+
+@media (min-width : 1375px) {
+  .author {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 516px 600px;
+  }
+}
+
+@media (min-width : 768px) {
+  .author {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media (min-width : 944px) and (max-width : 1374px) {
+  .author {
+    padding: 42px calc((100% - 904px)) 59px 40px;
+  }
+}
+
+@media (min-width : 768px) and (max-width : 943px) {
+  .author {
+    padding: 42px 40px 59px;
+  }
+}
+
+@media (max-width : 767px) {
+  .author {
+    padding: 33px 5vw 80px;
+  }
+}

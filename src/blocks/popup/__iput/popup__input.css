@@ -1,0 +1,21 @@
+.popup__input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  width: 100%;
+  padding-bottom: 4px;
+}
+
+.popup__input::placeholder {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #b6bcbf;
+}
+
+.popup__input:focus {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .4);
+}

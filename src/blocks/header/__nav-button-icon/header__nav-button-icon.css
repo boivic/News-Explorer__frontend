@@ -1,0 +1,15 @@
+@import url('./_dark/header__nav-button-icon_dark.css');
+
+.header__nav-button-icon::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../../../images/logout.svg);
+  margin-left: 5px;
+}
+
+@media (max-width : 767px) {
+  .header__nav-button-icon::after {
+    background-image: url(../../../images/logout.svg);
+  }
+}

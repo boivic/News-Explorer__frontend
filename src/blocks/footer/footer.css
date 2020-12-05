@@ -1,0 +1,53 @@
+@import url(./__list/footer__list.css);
+@import url(./__item-link/footer__item-link.css);
+@import url(./__item/footer__item.css);
+@import url(./__nav/footer__nav.css);
+@import url(./__copyright/footer__copyright.css);
+
+.footer {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+@media (min-width : 1375px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 16px calc((100% - 1228px) / 2) 0;
+  }
+}
+
+@media (min-width : 768px) and (max-width : 1374px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 10px 40px 0;
+  }
+}
+
+@media (max-width : 767px) {
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    padding: 6px 5vw 23px;
+  }
+}

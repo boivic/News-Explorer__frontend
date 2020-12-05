@@ -1,0 +1,20 @@
+@import url(./__image-container/card__image-container.css);
+@import url(./__image/card__image.css);
+@import url(./__date/card__date.css);
+@import url(./__title/card__title.css);
+@import url(./__text/card__text.css);
+@import url(./__link-text/card__link-text.css);
+@import url(./__container-text/card__container-text.css);
+@import url(./__text-hint/card__text-hint.css);
+@import url(./__button-collection/card__button-collection.css);
+@import url(./__button-delete/card__button-delete.css);
+@import url(./__button-collection/_active/card__button-collection_active.css);
+@import url(./__link-container/card__link-container.css);
+@import url(./__text-title/card__text-title.css);
+@import url(./_display-none/card_display-none.css);
+
+.card {
+  display: flex;
+  position: relative;
+  max-width: 450px;
+}

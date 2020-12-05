@@ -1,0 +1,23 @@
+.info__title {
+  font-family: 'Roboto Slab', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1a1b22;
+  margin: 18px 0 63px;
+}
+
+@media (max-width : 1374px) {
+  .info__title {
+    font-size: 30px;
+    line-height: 34px;
+    margin: 10px 0 29px;
+  }
+}
+
+@media (max-width : 767px) {
+  .info__title {
+    width: 228px;
+    margin: 9px 0 23px;
+  }
+}

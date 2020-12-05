@@ -1,0 +1,21 @@
+.card__button-collection_active {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  background-image: url(../../../../images/collection-marked.svg);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+  outline: none;
+  cursor: pointer;
+}
+
+@media(max-width : 1374px) {
+  .card__button-collection_active {
+    top: 8px;
+    right: 8px;
+  }
+}

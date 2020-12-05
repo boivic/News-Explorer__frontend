@@ -1,0 +1,30 @@
+.footer__copyright {
+  max-width: 288px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #b6bcbf;
+  letter-spacing: 0.5px;
+  margin: 27px 0 0;
+}
+
+@media (min-width : 768px) {
+  .footer__copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 0 6px 0;
+  }
+}
+
+@media (min-width : 400px) and (max-width : 767px) {
+  .footer__copyright {
+    margin: 28px 0 0 0;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+}

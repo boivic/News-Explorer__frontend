@@ -1,0 +1,14 @@
+.header__nav_drop-down-nav.header__nav_drop-down-nav {
+  display: block;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: #1a1b22;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 16px 16px 24px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

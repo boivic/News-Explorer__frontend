@@ -1,0 +1,25 @@
+@import url('./_borderBottom-none/header__nav-item_borderBottom-none.css');
+
+.header__nav-item {
+  margin-right: 34px;
+}
+
+.header__nav-item:nth-child(2) {
+  display: none;
+}
+
+.header__nav-item:last-child {
+  margin: 0;
+}
+
+@media(max-width : 1374px) {
+  .header__nav-item {
+    margin-right: 18px;
+  }
+}
+
+@media(max-width : 767px) {
+  .header__nav-item {
+    margin: 0;
+  }
+}

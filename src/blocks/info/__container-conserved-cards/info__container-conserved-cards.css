@@ -1,0 +1,21 @@
+.info__container-conserved-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-gap: 16px 16px;
+  margin: 0;
+}
+
+@media (max-width : 1374px) {
+  .info__container-conserved-cards {
+    grid-gap: 8px 8px;
+    margin: 0;
+  }
+}
+
+@media (max-width : 767px) {
+  .info__container-conserved-cards {
+    grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+    grid-gap: 10px 10px;
+    margin: 0;
+  }
+}

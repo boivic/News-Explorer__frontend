@@ -1,0 +1,23 @@
+@import url('./__name/description__name.css');
+@import url('./__title/description__title.css');
+@import url('./__subtitle/description__subtitle.css');
+@import url('./__subtitle-bold/description__subtitle-bold.css');
+@import url('./_display/description_display.css');
+
+.description {
+  font-family: 'Roboto', Arial, sans-serif;
+  display: none;
+  padding: 40px calc((100% - 1232px) / 2) 0;
+}
+
+@media (max-width : 1374px) {
+  .description {
+    padding: 25px 40px 0;
+  }
+}
+
+@media (max-width : 767px) {
+  .description {
+    padding: 9px 5vw 9px;
+  }
+}

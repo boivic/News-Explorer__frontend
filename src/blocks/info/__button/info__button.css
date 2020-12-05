@@ -1,0 +1,30 @@
+.info__button {
+  height: 64px;
+  max-width: 288px;
+  background-color: #fff;
+  border-radius: 80px;
+  color: #1a1b22;
+  margin: 64px auto 14px;
+}
+
+
+@media (min-width : 1125px) {
+  .info__button:hover {
+    background-color: rgba(168, 168, 168, .2);
+  }
+}
+
+@media (min-width : 768px) and (max-width: 1374px) {
+  .info__button {
+    height: 56px;
+    max-width: 240px;
+    margin: 33px auto 9px;
+  }
+}
+
+@media (max-width : 767px) {
+  .info__button {
+    height: 56px;
+    margin: 16px auto 5px;
+  }
+}

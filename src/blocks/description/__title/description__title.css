@@ -1,0 +1,23 @@
+.description__title {
+  font-size: 40px;
+  line-height: 46px;
+  color: #1a1b22;
+  font-family: 'Roboto Slab', Arial, sans-serif;
+  margin: 29px 0 0;
+  width: 450px;
+}
+
+@media(max-width : 1374px) {
+  .description__title {
+    font-size: 30px;
+    line-height: 34px;
+    margin: 17px 0 0;
+    width: 320px;
+  }
+}
+
+@media(max-width : 767px) {
+  .description__title {
+    width: 100%;
+  }
+}

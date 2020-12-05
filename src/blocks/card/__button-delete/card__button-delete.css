@@ -1,0 +1,31 @@
+.card__button-delete {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  background-image: url(../../../images/delete.svg);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+  outline: none;
+  cursor: pointer;
+}
+
+.card__button-delete:hover {
+  background-image: url(../../../images/delete-dark.svg);
+}
+
+@media(max-width : 1374px) {
+  .card__button-delete {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media(min-width : 1124px) {
+  .card__button-delete:hover ~ .card__text-hint {
+    display: flex;
+  }
+}

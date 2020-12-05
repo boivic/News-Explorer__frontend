@@ -1,0 +1,13 @@
+.header__nav-button-icon_dark::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../../../../images/logout-dark.svg);
+  margin-left: 5px;
+}
+
+@media (max-width : 767px) {
+  .header__nav-button-icon_dark::after {
+    background-image: url(../../../../images/logout.svg);
+  }
+}

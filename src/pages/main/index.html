@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Сайт для поиска новостей с возможностью сохранения их в личном кабинете">
+  <meta name="author" content="Stanislav Ponomarev">
+  <title>News Explorer | Главная</title>
+  <link rel="icon" href="<%=require('../../images/favicon.svg') %>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+
+<body>
+  <div class="root">
+    <header class="header">
+      <a href="#" class="header__logo">NewsExplorer</a>
+      <button class="header__menu"></button>
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-main">Главная</a>
+          </li>
+          <li class="header__nav-item"></li>
+          <li class="header__nav-item">
+            <button class="header__nav-button">Авторизоваться</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="search">
+        <h1 class="search__title">Что творится в мире?</h1>
+        <p class="search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+        <form class="search__form" novalidate>
+          <input type="text" autocomplete="off" name="search" class="search__input" placeholder="Политика" required>
+          <span class="error error__search"></span>
+          <button class="button search__button">Искать</button>
+        </form>
+      </section>
+      <section class="preloader">
+        <div class="preloader__search">
+          <div class="preloader__circle"></div>
+          <p class="preloader__search-text">Идет поиск новостей...</p>
+        </div>
+        <div class="preloader__result">
+          <img class="preloader__image" src="<%=require('../../images/preloader-image.svg') %>" alt="картинка - ничего не найдено">
+          <h4 class="preloader__result-title">Ничего не найдено</h4>
+          <p class="preloader__result-text">К сожалению по вашему запросу ничего не найдено.</p>
+        </div>
+        <div class="preloader__error">
+          <img class="preloader__image" src="<%=require('../../images/preloader-image.svg') %>" alt="картинка - ничего не найдено">
+          <p class="preloader__result-text">Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз</p>
+        </div>
+      </section>
+      <section class="description">
+        <p class="description__name">Сохранённые статьи</p>
+        <h3 class="description__title">Грета, у вас 5 сохранённых статей</h3>
+        <p class="description__subtitle">По ключевым словам:&#8194;<strong>Природа, Тайга</strong>&#8194;и&#8194;<strong>2-м другим</strong></p>
+      </section>
+      <section class="info">
+        <h2 class="info__title">Результаты поиска</h2>
+        <div class="info__container-cards"></div>
+        <div class="info__container-conserved-cards"></div>
+        <button class="button info__button">Показать еще</button>
+      </section>
+      <section class="author">
+        <img src="<%=require('../../images/author.jpg') %>" alt="аватар автора" class="author__avatar">
+        <h3 class="author__title">Об авторе</h3>
+        <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+          чем вы занимаетесь, какими технологиями разработки владеете.
+        </p>
+        <p class="author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
+          и чем можете помочь потенциальным заказчикам.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__item-link">Главная</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://praktikum.yandex.ru" class="footer__item-link" target="_blank">Яндекс.Практикум</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://github.com/StanislavPonomarev93" class="footer__item-link" target="_blank">
+              <img src="<%=require('../../images/github.svg') %>" alt="иконка гитхаб" class="footer__icon">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="https://facebook.com" class="footer__item-link" target="_blank">
+              <picture>
+                <source media="(max-width: 767px)" srcset="<%=require('../../images/facebook.svg') %>">
+                <source media="(max-width: 1374px)" srcset="<%=require('../../images/facebook-ring.svg') %>">
+                <img src="<%=require('../../images/facebook.svg') %>" alt="иконка фейсбук" class="footer__icon">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="footer__copyright">&copy; 2020 Supersite, Powered by News API</p>
+    </footer>
+    <div class="popup popup__authorization">
+      <div class="popup__content">
+        <img src="<%=require('../../images/close.svg') %>" alt="" class="popup__close">
+        <h3 class="popup__title">Вход</h3>
+        <form class="popup__form-authorization">
+          <h4 class="popup__title-input">Email</h4>
+          <input type="email" name="email" placeholder="Введите почту" class="popup__input" required>
+          <span class="error"></span>
+          <h4 class="popup__title-input">Пароль</h4>
+          <input type="password" name="password" placeholder="Введите пароль" class="popup__input password" pattern="^\w{8,}\S*$" required>
+          <span class="error"></span>
+          <span class="error error__response"></span>
+          <button class="button popup__button">Войти</button>
+          <p class="popup__subtitle">или&#160;<a href="#" class="popup__link">Зарегистрироваться</a></p>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup__registration">
+      <div class="popup__content">
+        <img src="<%=require('../../images/close.svg') %>" alt="" class="popup__close">
+        <h3 class="popup__title">Регистрация</h3>
+        <form class="popup__form-registration">
+          <h4 class="popup__title-input">Email</h4>
+          <input type="email" name="email" placeholder="Введите почту" class="popup__input" required>
+          <span class="error"></span>
+          <h4 class="popup__title-input">Пароль</h4>
+          <input type="password" name="password" placeholder="Введите пароль" class="popup__input password" pattern="^\w{8,}\S*$" required>
+          <span class="error"></span>
+          <h4 class="popup__title-input">Имя</h4>
+          <input type="text" name="name" placeholder="Введите имя" class="popup__input" minlength="2" maxlength="32" required>
+          <span class="error"></span>
+          <span class="error error__response"></span>
+          <button class="button popup__button">Зарегистрироваться</button>
+          <p class="popup__subtitle">или&#160;<a href="#" class="popup__link">Войти</a></p>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup__successful-registration">
+      <div class="popup__content">
+        <img src="<%=require('../../images/close.svg') %>" alt="" class="popup__close">
+        <h3 class="popup__title popup__title_title">Пользователь успешно зарегистрирован!</h3>
+        <a href="#" class="popup__link popup__link_link">Войти</a>
+      </div>
+    </div>
+  </div>
+  <script src="<%=htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+</html>

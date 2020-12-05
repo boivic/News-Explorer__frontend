@@ -1,0 +1,15 @@
+.footer__item-link {
+  text-decoration: none;
+  color: #1a1b22;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 48px;
+  display: block;
+}
+
+.footer__item-link:hover {
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+  opacity: .6;
+}

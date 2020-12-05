@@ -1,0 +1,33 @@
+.author__avatar {
+  width: 460px;
+  height: 460px;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center top;
+  object-position: center top;
+  border-radius: 50%;
+  margin: 39px 56px 0 0;
+}
+
+@media (min-width : 768px) {
+  .author__avatar {
+    grid-row: 1 / 5;
+  }
+}
+
+@media (max-width : 1374px) {
+  .author__avatar {
+    width: 232px;
+    height: 232px;
+    margin: 20px 32px 0 0;
+  }
+}
+
+@media (max-width : 767px) {
+  .author__avatar {
+    width: 272px;
+    height: 272px;
+    margin: 0 auto;
+  }
+}

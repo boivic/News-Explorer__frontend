@@ -1,0 +1,7 @@
+.preloader__search {
+  position: relative;
+  width: 280px;
+  margin: auto;
+  padding: 80px 0 80px;
+  display: none;
+}

@@ -1,0 +1,27 @@
+@import url('./__title/info__title.css');
+@import url('./__container-cards/info__container-cards.css');
+@import url('./__container-conserved-cards/info__container-conserved-cards.css');
+@import url('./__button/info__button.css');
+@import url('./_display-none/info_display-none.css');
+@import url('./_display/info_display.css');
+
+.info {
+  font-family: 'Roboto', Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #f5f6f7;
+  padding: 63px calc((100% - 1232px) / 2) 64px;
+  display: none;
+}
+
+@media (max-width : 1374px) {
+  .info {
+    padding: 32px 40px 32px;
+  }
+}
+
+@media (max-width : 767px) {
+  .info {
+    padding: 24px 5vw 26px;
+  }
+}

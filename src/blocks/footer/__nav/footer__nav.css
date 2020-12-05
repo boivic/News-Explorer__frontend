@@ -1,0 +1,14 @@
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (min-width : 400px) {
+  .footer__nav {
+    justify-self: flex-end;
+  }
+}
